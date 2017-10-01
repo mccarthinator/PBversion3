@@ -1,0 +1,835 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: snow;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.center.welcome {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.centering-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered-home {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.centering-cards {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+div.card-action.center.page1 {
+    flex: auto;
+}
+
+.card {
+    width: 100%;
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.card-image:hover {
+    opacity: 0.7;
+}
+
+.card-title-team {
+    position: absolute;
+    top: 255px;
+    left: 10px;
+    width: 100%;
+    color: #00b0ff;
+}
+
+.nav-wrapper .brand-logo img {
+    height: 64px;
+}
+
+
+/* label focus color */
+
+.input-field input:focus+label {
+    color: red !important;
+}
+
+
+/* label underline focus color */
+
+.input-field input:focus {
+    border-bottom: 1px solid dodgerblue !important;
+    box-shadow: 0 1px 0 0 dodgerblue !important
+}
+
+.navbar {
+    background: #e6e6e6;
+}
+
+#userHistory {
+    margin-left: 4px;
+}
+
+#locationLoad {
+    display: none;
+    color: dodgerblue;
+}
+
+.sign-up-form {
+    width: 320px;
+    background: #3421f5;
+    color: #fffff0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+#cuisineProgressMsg,
+#resultProgressMsg,
+#budgetProgressMsg,
+#hungryProgressMsg {
+    display: none;
+}
+
+.user-data-container {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.emailForm {
+    margin-top: 20px;
+}
+
+.modal-header {
+    background: #3421f5;
+}
+
+#themap {
+    display: none;
+    margin-bottom: 100px;
+}
+
+.map-title {
+    display: none;
+}
+
+.form-title {
+    color: #fffff0;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+#logo:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.location-head,
+.food-head,
+.price-head,
+.about-head,
+.results-head {
+    background: #3421f5;
+    color: #fffff0;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+.history-head {
+    background: #3421f5;
+    color: #fffff0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/* Materialize preloader */
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    /* display: none; */
+    position: fixed;
+    /* z-index: 100; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#loader-container {
+    margin-top: 130px;
+    margin-bottom: 100px;
+    display: none;
+}
+
+.cuisine-title {
+    color: #3421f5;
+    font-weight: 900;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+#budget-container {
+    display: none;
+}
+
+#budget-container div.col.s4.offset-s4.center-align {
+    color: white;
+    font-size: 20px;
+} 
+
+#budget-container div.card.blue {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.budget-title {
+    color: #fffff0;
+    /*font-weight: 900;
+    font-size: 20px;*/
+}
+
+.section.no-pad-bot {
+    padding-bottom: 0;
+}
+
+.nav-link {
+    margin-top: 13px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#recDetails:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #3421f5;
+    font-weight: 900;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.footer {
+    padding: 10px;
+    background: #e6e6e6;
+}
+
+.footer p {
+    margin-top: 5px;
+    color: #3421f5;
+}
+
+.footer-link {
+    color: #3421f5;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.results-list {
+    list-style-type: none;
+}
+
+#restaurantRec {
+    margin-top: 20px;
+    background: lightgrey;
+    border-radius: 5px;
+}
+
+.result {
+    color: #3421f5;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.data {
+    color: #3e3e3e;
+}
+
+#recDetails {
+    color: dodgerblue;
+}
+
+
+/* panels */
+
+.panel>.panel-heading {
+    background-color: #3421f5;
+    color: #fffff0;
+}
+
+.panel-title {
+    font-size: 30px;
+}
+
+.panel-heading {
+    background: #3421f5;
+}
+
+.panel-heading {
+    font-size: 20px;
+}
+
+
+/* page - about */
+
+.about-page {
+    margin-bottom: 100px;
+}
+
+.column {
+    margin-bottom: 15px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    color: grey;
+}
+
+.about-paragraph {
+    font-size: 20px;
+    color: #3e3e3e;
+    font-weight: 900;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+/* progress bar */
+.progress {
+    position: relative;
+    height: 4px;
+    width: 100%;
+    background-color:gray;
+    border-radius: 2px;
+    margin: .5rem 0 1rem 0;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    max-width: 300px;
+    display: none;
+    text-align: center;
+}
+
+#progress1 {
+    position: relative;
+    height: 4px;
+    width: 100%;
+    background-color:gray;
+    border-radius: 2px;
+    overflow: hidden;
+    display: block;
+    max-width: 300px;
+    display: inline-block; 
+}
+
+#progress2 {
+    position: relative;
+    height: 4px;
+    width: 100%;
+    background-color:gray;
+    border-radius: 2px;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    max-width: 300px;
+    display: none; 
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.flow-text {
+    font-size: 16px;
+}
+
+
+/* containers */
+
+.container_centered {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.location-container {
+    max-width: 500px;
+    margin-top: 130px;
+}
+
+#foodType-container {
+    display: none;  
+    margin: auto;
+}
+
+.about-container {
+    padding: 0 16px;
+}
+
+.price-container {
+    display: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#results-container {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.history-container {
+    margin-bottom: 100px;
+}
+
+#googleMapContainer {
+    display: none;
+}
+
+
+/* buttons */
+
+#logOutBtn,
+#myAccount {
+    display: none;
+}
+
+#directionsButton {
+    background-color: #ffab40;
+}
+
+.contact-btn {
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: white;
+    background-color: #5e5e5e;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact-btn:hover {
+    background-color: #A8A4A3;
+    color: black;
+}
+
+.mike-btn {
+    margin-top: 12px;
+}
+
+#collapseBtn {
+    margin-top: 20px;
+}
+
+.gray-btn {
+    margin-top: 5px;
+    padding: 10px;
+    background: gray;
+    border: white;
+    font-size: 20px;
+    color: #fffff0;
+}
+
+.email-btn {
+    padding: 5px;
+    background: gray;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fffff0;
+    border: none;
+}
+
+#info-button {
+    background-color: #ffab40;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.backButton {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 10px;
+    display: none;
+    margin: auto;
+    text-align: center;
+    width: 30%;
+}
+
+#backButton2 {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 10px;
+    display: none;
+    margin: auto;
+    text-align: center;
+    margin: auto;
+}
+
+
+/* #submitBtn:hover, */
+
+#hungryBtn:hover,
+#resultsBtn:hover {
+    background: #C63D0F;
+    color: #fffff0;
+    text-decoration: none;
+}
+
+#submitBtn {
+    vertical-align: baseline;
+    position: relative;
+    top: 5px;
+    /* right: 10px; */
+}
+
+.result-link {
+    text-decoration: none;
+}
+
+.link-btn {
+    width: 300px;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.link-div {
+    margin-top: 20px;
+}
+
+.link-btn-2 {
+    max-width: 500px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#helpBtn {
+    color: #3421f5;
+    position: fixed;
+    right: 15px;
+    bottom: 70px;
+}
+
+#helpBtn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+/* Close Button */
+
+.popup-close {
+    width: 30px;
+    height: 30px;
+    padding-top: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transition: ease 0.25s all;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    border-radius: 1000px;
+    background: rgba(0, 0, 0, 0.8);
+    font-family: Arial, Sans-Serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100%;
+    color: #fff;
+}
+
+.popup-close:hover {
+    -webkit-transform: translate(50%, -50%) rotate(180deg);
+    transform: translate(50%, -50%) rotate(180deg);
+    background: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+
+/* Outer */
+
+.popup {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 12;
+    background: #396afc;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2948ff, #396afc);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.hr-style {
+    border-top: 3px dashed #3421f5;
+    background: snow;
+}
+
+.hr-style-2 {
+    border-top: 3px dashed snow;
+    background: blue;
+}
+
+
+/* Inner */
+
+.popup-inner {
+    max-width: 700px;
+    width: 90%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+    border-radius: 3px;
+    background: snow;
+}
+
+
+/* messages */
+
+#failMsg,
+#cheapErrMsg,
+#medErrMsg,
+#expErrMsg,
+#signUpErr,
+#signInErr,
+#signUpErr2 {
+    display: none;
+}
+
+.errMsg {
+    color: red;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.errMsg2 {
+    color: red;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+/* GIFs */
+
+.gif,
+.budget-gif {
+    width: 80%;
+    height: 80%;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+
+.gif:hover,
+.budget-gif:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.row-center {
+    text-align: center;
+}
+
+.col-center {
+    display: inline-block;
+    float: none;
+}
+
+.gif-black {
+    height: 210px;
+    width: 200px;
+    background: #e6e6e6;
+    margin: 10px 10px 10px 10px;
+    border-radius: 5px;
+    /*padding: 5px 5px 5px 5px;*/
+}
+
+#opinion {
+    color: #3421f5;
+    font-weight: 900;
+}
+
+
+/* pop-ups */
+
+.popup h1 {
+    color: #3421f5;
+    font-weight: 900;
+}
+
+
+/* s */
+
+.modal-title {
+    color: #3421f5;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+#guestLogin {
+    margin-top: 20px;
+    margin-bottom: -5px;
+    color: dodgerblue;
+}
+
+#guestLogin:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+th {
+    color: #3421f5;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+#username {
+    padding:5px;
+}
+
+@media screen and (max-width:991px) {
+    .result-gif {
+        display: none;
+    }
+}
+
+@media screen and (max-width:565px) {
+    .table {
+        font-size: 12px;
+    }
+    th {
+        font-size: 14px;
+    }
+    #thAddress,
+    #thBudget,
+    #tdAddress,
+    #tdBudget {
+        display: none;
+    }
+    #helpBtn {
+        bottom: 90px;
+    }
+    .popup {
+        font-size: 10px;
+    }
+    .popup h1 {
+        font-size: 16px;
+    }
+    .results-container {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:501px) {
+    .table {
+        font-size: 10px;
+    }
+    th {
+        font-size: 12px;
+    }
+    .sign-up-form {
+        font-size: 12px;
+    }
+    .form-title {
+        font-size: 16px;
+    }
+    #signUpBtn,
+    #loginBtn {
+        font-size: 12px;
+        padding: 5px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:434px) {
+    .table {
+        font-size: 8px;
+    }
+    th {
+        font-size: 10px;
+    }
+    .results-head {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .table {
+        font-size: 6px;
+    }
+    th {
+        font-size: 8px;
+    }
+    .location-container {
+        margin-top: 50px;
+    }
+    .popup-inner {
+        padding: 30px;
+        font-size: 8px;
+    }
+    .sign-up-form {
+        width: 300px;
+    }
+}

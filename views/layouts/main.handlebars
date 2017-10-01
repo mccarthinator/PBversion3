@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Piecebroker</title>
+</head>
+<body>      
+      {{!-- navbar --}}
+      <nav>
+        <div class="navbar-fixed">
+          <div class="nav-wrapper blue darken-1" role="navigation">
+              <a href="/" class="brand-logo left"><img src="images/whitelogo.png"></a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="/app">Find Food</a></li>
+                  <li><a href="/signup">Sign Up</a></li>
+                  <li><a href="/login">Login</a></li>
+                  <li><a href="/profile">My History</a></li>
+                </ul>
+          </div>
+        </div>
+            <ul class="side-nav right" id="mobile-demo">
+              <li><a href="/app">Find Food</a></li>
+              <li><a href="/signup">Sign Up</a></li>
+              <li><a href="/login">Login</a></li>
+              <li><a href="/profile">My History</a></li>
+            </ul>
+      </nav>
+   
+    <main>
+    {{{body}}}
+    </main>
+
+    {{!--//footer--}}
+
+    <footer class="page-footer blue darken-1">
+      <div class="container blue darken-1">
+          <div class="row">
+            <div class="col s8 blue darken-1 left-align">
+              <h5 class="white-text">PieceBroker</h5>
+              <p class="grey-text text-lighten-4">Find food fast and skip the argument.</p>
+            </div>
+            <div class="col s4 darken-1 right-align">
+              <h5 class="white-text">Team GitHubs</h5>
+                <p><a class="orange-text text-lighten-3" id="link1" href="https://github.com/dbalkin77">Doug Balkin</a> 
+                    - <a class="orange-text text-lighten-3" id="link2" href="https://github.com/jjconoscenti">JJ Conoscenti</a>
+                    - <a class="orange-text text-lighten-3" id="link3"href="https://github.com/colinmac17">Colin McAtee</a>
+                    - <a class="orange-text text-lighten-3" id="link4" href="https://github.com/mccarthinator">Katie McCarthy</a>
+                    - <a class="orange-text text-lighten-3" id="link5" href="https://github.com/wjthornberry">Jake Thornberry</a>
+                </p>
+            </div>        
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright blue darken-2">
+        <div class="container center-align">
+        © 2017 Copyright PieceBroker
+        </div>
+      </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

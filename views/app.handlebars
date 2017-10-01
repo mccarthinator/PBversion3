@@ -1,0 +1,202 @@
+<!--1st screen: location search container-->
+<div class="container" id="location-container">
+    <br></br>
+    <h3 class="header center">Where do you want to eat?</h3>
+    <div class="row center input-field">
+        <!--User form-->
+        <input class="col s10 offset-s1 m4 offset-m4 text-area" id="locationInput" type="text" placeholder="Chicago, IL">
+        <a class="btn waves-effect waves-light green darken-1 z-depth-2" id="submitBtn">Find Food</a>
+    </div>
+    <div class="row center">
+        <p class="errMsg" id="failMsg">Please enter a valid city</p>
+        <a class="btn waves-effect waves-light grey lighten-1 z-depth-2" id="hungryBtn">Feeling hungry?</a>
+        <p id="locationLoad" class="animated bounce">...Finding your location</p>
+    </div>
+</div>
+<!--End of 1st screen, location search-->
+
+<!--2nd screen: Pick cuisine type container-->
+<br></br>
+<div class="container" id="foodType-container">
+    <div class="row">
+        <div class="col s6 centering-cards">
+            <div class="card">
+                <div class="card-image" data-id="55">
+                    <img src="/images/updatedFood/Italian_updated.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="col s6 centering-cards">
+            <div class="card">
+                <div class="card-image" data-id="1">
+                    <img src="/images/updatedFood/Americana_updated.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6 centering-cards">
+            <div class="card">
+                <div class="card-image" data-id="148">
+                    <img src="/images/updatedFood/Indian_updated.jpg">
+                </div>
+            </div>
+    </div>
+    <div class="col s6 centering-cards">
+        <div class="card">
+            <div class="card-image" data-id="73">
+              <img src="/images/updatedFood/Mexican_updated.jpg">
+            </div>
+        </div>
+    </div>
+    </div>
+     <div class="row">
+        <div class="col s6 centering-cards">
+            <div class="card">
+                <div class="card-image" data-id="177">
+                    <img src="/images/updatedFood/Sushi.jpg">
+                </div>
+            </div>
+        </div>
+    <div class="col s6 centering-cards">
+        <div class="card">
+            <div class="card-image" data-id="308">
+              <img src="/images/updatedFood/Vegetarian_updated.jpg">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col s6 centering-cards">
+            <div class="card">
+                <div class="card-image" data-id="70">
+                    <img src="/images/updatedFood/Mediteranian_Updated.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="col s6 centering-cards">
+            <div class="card">
+                <div class="card-image" data-id="25">
+                    <img src="/images/updatedFood/Chinese_updated.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--progress bar-->
+    <div class="container container_centered">
+        <div class="progress" id="progress1">
+            <div class="determinate" style="width: 33%"></div>
+        </div>
+    </div>
+    <!-- back button 2 -->
+    <div class="row center">
+        <a class="waves-effect waves-light btn backButton" id="backButton1" onclick="location.reload()">Restart</a>
+    </div>
+</div>
+
+<!--End of second screen, cuisine type-->
+        
+<!--3rd screen: Budget preference container-->
+<br></br>
+<div class="container text-center" id="budget-container">
+    <div class="row center-align">
+        <div class="col s10 offset-s1 m4 offset-m4">
+            <div class="card blue">
+                <div class="card-content white-text">
+                    <h4 class="center-align">What's your budget?</h4>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <div class="row center-align" id="moneySigns">
+        <button class="btn btn-large green" data-id="cheap">$</button>
+        <p class="errMsg" id="cheapErrMsg">Whoops! Can't seem to find any cheap restaurants.</p>
+        
+        <button class="btn btn-large green" data-id="medium">$$</button>
+        <p class="errMsg" id="medErrMsg">Oh no! We can't find any medium-priced restaurants based on your selection.</p>
+        
+        <button class="btn btn-large green" data-id="expensive">$$$</button>
+        <p class="errMsg" id="expErrMsg">Uh oh, we can't seem to find any restaurants that match your search.</p>
+    </div>
+    <!-- progress bar -->
+    <div class="progress" id="progress2">
+        <div class="determinate" style="width: 66%"></div>
+    </div>
+    <!-- back button 2 -->
+    <div class="row center button-centered">
+        <a class="waves-effect waves-light btn backButton" id="backButton2" onclick="location.reload()">Restart</a>
+    </div>
+</div>
+
+<!--End of 3rd screen, budget-->
+
+<!--Results-->
+<!--Title above table for Results-->
+<div class="container" id="results-container">
+    <div class="row">
+        <div class="col s12 center-align">
+            <button class="btn waves-effect waves-light z-depth-2" id="backButton3" onclick="location.reload()">Try Again</button>
+            <h5 class="blue-text center-align" id="heres-your-result">Here's your result:</h5>
+        </div>
+    </div>
+
+    <!--Results Table-->
+    <div class="row results-table">
+        <table class="responsive-table center-align">
+            <thead>
+            <tr>
+                <th><span class="black-text center-align">Restaurant Name</span></th>
+                <th><span class="black-text center-align">Address</span></th>
+                <th><span class="black-text center-align">Cuisine Type</span></th>
+                <th><span class="black-text center-align">Cost</span></th>
+                <th><span class="black-text center-align">Rating</span></th>
+                <th><span class="black-text center-align">Link</span></th>
+            </tr>
+            </thead>
+
+            <tbody class="table-body center-align"> 
+            <tr>
+                <td id=""><span class="green-text text-darken-1 data" id="recName"></span></td>
+                <td id=""><span class="green-text text-darken-1 data" id="recAddress"></span></td>
+                <td id=""><span class="green-text text-darken-1 data" id="recCuisine"></span></td>
+                <td id=""><span class="green-text text-darken-1 data" id="recBudget"></span></td>
+                <td id=""><span class="green-text text-darken-1 data" id="recRating"></span></td>
+                <td id=""><a class="green-text text-darken-1 data" id="recDetails">Click for menu</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--Google Maps Container-->
+    <div class="container google-map-container" id="googleMapContainer">
+        <div class="row">
+            <div class="col s12 m8 l10">
+                <iframe id="showMap" width="600" height="450" frameborder="0" style="border:0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END OF RESULTS-->
+
+<!--error message to show if no restaurants are found in a city-->
+<div id="errDiv">
+    <p class="errMsg"></p>
+</div>
+
+<!--Preloader to show between views-->
+<div class="preloader-background loader">
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+</div>
