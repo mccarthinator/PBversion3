@@ -37,13 +37,6 @@ module.exports = function(sequelize, DataTypes) {
                 len: [1]
             }
         }
-        phoneNumber: {
-            type: DataTypes.STRING,
-            allowNull: flase,
-            validate: {
-                len: [10]
-            }
-        }
     });
     User.associate = function(models) {
         User.hasMany(models.result, {
