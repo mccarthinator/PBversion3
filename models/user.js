@@ -43,6 +43,7 @@ module.exports = function(sequelize, DataTypes) {
             validate: {
                 len: [10]
             }
+
         }
     });
     User.associate = function(models) {

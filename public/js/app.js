@@ -96,7 +96,7 @@ if (window.location.pathname === '/app') {
 // userResult, restaurant name, restaurant address, restaurant cuisine type, restaurant budget, restaurant rating, restaurant latitude, restaurant longitude
 var userResult, recName, recAddress, recCity, recCuisine, recBudget, recRating, recDetails, destLatitude, destLongitude;
 
-//set global vars for cityID, cuisineID
+//set global vars for cityID, cuisineID 
 var cityID, cuisineID, userBudget, restaurantID;
 
 //set empty arrays for restaurant types

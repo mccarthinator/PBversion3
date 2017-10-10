@@ -95,7 +95,7 @@
 </div>
 
 <!--End of second screen, cuisine type-->
-
+        
 <!--3rd screen: Budget preference container-->
 <br></br>
 <div class="container text-center" id="budget-container">
@@ -107,15 +107,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>   
 
     <div class="row center-align" id="moneySigns">
         <button class="btn btn-large green" data-id="cheap">$</button>
         <p class="errMsg" id="cheapErrMsg">Whoops! Can't seem to find any cheap restaurants.</p>
-
+        
         <button class="btn btn-large green" data-id="medium">$$</button>
         <p class="errMsg" id="medErrMsg">Oh no! We can't find any medium-priced restaurants based on your selection.</p>
-
+        
         <button class="btn btn-large green" data-id="expensive">$$$</button>
         <p class="errMsg" id="expErrMsg">Uh oh, we can't seem to find any restaurants that match your search.</p>
     </div>
@@ -155,7 +155,7 @@
             </tr>
             </thead>
 
-            <tbody class="table-body center-align">
+            <tbody class="table-body center-align"> 
             <tr>
                 <td id=""><span class="green-text text-darken-1 data" id="recName"></span></td>
                 <td id=""><span class="green-text text-darken-1 data" id="recAddress"></span></td>
@@ -199,6 +199,7 @@
             </div>
         </div>
     </div>
+
 </div>
 
 
@@ -209,41 +210,7 @@
         </div>
     </div>
 <script>
-    /*
-    var userLatitude = JSON.parse(sessionStorage.getItem('latitude'));
-    var userLongitude = JSON.parse(sessionStorage.getItem('longitude'));
-    var OPTIONS = {
-    scriptSrc: 'lyftWebButton.min.js',
-    namespace: 'PieceBroker',
-    clientId: 'RHv41f7m4phz',
-    clientToken: 'WXriccDzUGx35NwCL2XQ8DuJdQ1j9tHIhcANit/ftNaBjlnRSvTkAn2HqonaJrYW7ZcKyyjTrC23tIe5eLsjE929NcGtVqjAIgGJuiri437qW7X2LesdKM4=',
-    location: {
-      pickup: {
-          latitude: {userLatitude},
-          longitude: {userLongitude}
-      },
-      destination: {
-        latitude: {destLatitude},
-        longitude: {destLongitude},
-      },
-    },
-    parentElement: document.getElementById('lyft-web-button-parent'),
-    queryParams: {
-      credits: ''
-    },
-    theme: 'multicolor large',
-  };
-  (function(t) {
-    var n = this.window,
-    e = this.document;
-    n.lyftInstanceIndex = n.lyftInstanceIndex || 0;
-    var a = t.parentElement,
-    c = e.createElement("script");
-    c.async = !0, c.onload = function() {
-    n.lyftInstanceIndex++;
-    var e = t.namespace ? "lyftWebButton" + t.namespace + n.lyftInstanceIndex : "lyftWebButton" + n.lyftInstanceIndex;
-    n[e] = n.lyftWebButton, t.objectName = e, n[e].initialize(t)
-  }, c.src = t.scriptSrc, a.insertBefore(c, a.childNodes[0])
-  }).call(this, OPTIONS);
-  */
+   
 </script>
+</div>
+
