@@ -294,7 +294,7 @@ $('.btn-large').on('click', function() {
 
 //I'm Feeling Hungry click function
 $('#hungryBtn').on('click', function(e) {
-    function showLiftButton(lat, long, dlat, dlong) {
+    function showLyftButton(lat, long, dlat, dlong) {
         var OPTIONS = {
             scriptSrc: './js/lyftWebButton.js',
             namespace: 'PieceBroker',
@@ -437,7 +437,7 @@ $('#hungryBtn').on('click', function(e) {
                 $('.map-title').show();
                 $('#showMap').attr('src', imgSrc);
                 map.show();
-                showLiftButton(userLatitude, userLongitude, destLatitude, destLongitude);
+                showLyftButton(userLatitude, userLongitude, destLatitude, destLongitude);
             });
         });
     }
