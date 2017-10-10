@@ -36,6 +36,14 @@ module.exports = function(sequelize, DataTypes) {
             validate: {
                 len: [1]
             }
+        },
+        phoneNumber: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                len: [10]
+            }
+
         }
     });
     User.associate = function(models) {
