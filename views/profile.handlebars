@@ -18,10 +18,12 @@
 
     {{!--Table--}}
     <div class="row">
-    
     <!--Favorites table-->
       <table class="responsive-table profile-table col s12 center-align" id="profile-page" method="POST" action="/profile">
             <thead>
+                <tr>
+                    <th><span class="red-text center-align">Favorites</span></th>
+                </tr>
                 <tr>
                     <th><span class="black-text center-align">Restaurant Name</span></th>
                     <th><span class="black-text center-align">City</span></th>
@@ -44,9 +46,12 @@
                    {{/each}}
             </tbody>
         </table>
-
+        <!-- Results history -->
         <table class="responsive-table profile-table col s12 center-align" id="profile-page" method="POST" action="/profile">
             <thead>
+                <tr>
+                    <th><span class="red-text center-align">History</span></th>
+                </tr>
                 <tr>
                     <th><span class="black-text center-align">Restaurant Name</span></th>
                     <th><span class="black-text center-align">City</span></th>
