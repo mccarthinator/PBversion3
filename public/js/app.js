@@ -96,7 +96,7 @@ if (window.location.pathname === '/app') {
 // userResult, restaurant name, restaurant address, restaurant cuisine type, restaurant budget, restaurant rating, restaurant latitude, restaurant longitude
 var userResult, recName, recAddress, recCity, recCuisine, recBudget, recRating, recDetails, destLatitude, destLongitude;
 
-//set global vars for cityID, cuisineID 
+//set global vars for cityID, cuisineID
 var cityID, cuisineID, userBudget, restaurantID;
 
 //set empty arrays for restaurant types
@@ -289,6 +289,8 @@ $('.btn-large').on('click', function() {
     $('.map-title').show();
     $('#showMap').attr('src', imgSrc);
     map.show();
+    showLyftButton(userLatitude, userLongitude, destLatitude, destLongitude);
+
 
 });
 
@@ -459,4 +461,41 @@ function medFail() {
 
 function expFail() {
     $('#expErrMsg').hide();
+}
+
+function showLyftButton(lat, long, dlat, dlong) {
+        var OPTIONS = {
+            scriptSrc: './js/lyftWebButton.js',
+            namespace: 'PieceBroker',
+            clientSecret: 'SANDBOX-yDBWVbozFMIuvdkXk71QI1BrncZLGYs2',
+            clientId: 'SANDBOX-RHv41f7m4phz',
+            clientToken: 'WXriccDzUGx35NwCL2XQ8DuJdQ1j9tHIhcANit/ftNaBjlnRSvTkAn2HqonaJrYW7ZcKyyjTrC23tIe5eLsjE929NcGtVqjAIgGJuiri437qW7X2LesdKM4=',
+            location: {
+            pickup: {
+                latitude: lat,
+                longitude: long
+            },
+            destination: {
+                latitude: dlat,
+                longitude: dlong,
+            },
+            },
+            parentElement: document.getElementById('lyft-web-button-parent'),
+            queryParams: {
+            credits: ''
+            },
+            theme: 'multicolor large',
+        };
+        (function(t) {
+            var n = this.window,
+            e = this.document;
+            n.lyftInstanceIndex = n.lyftInstanceIndex || 0;
+            var a = t.parentElement,
+            c = e.createElement("script");
+            c.async = !0, c.onload = function() {
+            n.lyftInstanceIndex++;
+            var e = t.namespace ? "lyftWebButton" + t.namespace + n.lyftInstanceIndex : "lyftWebButton" + n.lyftInstanceIndex;
+            n[e] = n.lyftWebButton, t.objectName = e, n[e].initialize(t)
+        }, c.src = t.scriptSrc, a.insertBefore(c, a.childNodes[0])
+    }).call(this, OPTIONS);
 }
