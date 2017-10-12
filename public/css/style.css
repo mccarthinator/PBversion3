@@ -245,6 +245,21 @@ div.card-action.center.page1 {
     opacity: 0.9;
 }
 
+
+/* this is for making the footer sticky */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  /* this is for making the footer sticky */   
+
+
+
 .footer {
     padding: 10px;
     background: #e6e6e6;
