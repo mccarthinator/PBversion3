@@ -290,9 +290,6 @@ $('.btn-large').on('click', function() {
     $('#showMap').attr('src', imgSrc);
     map.show();
     showLyftButton(userLatitude, userLongitude, destLatitude, destLongitude);
-
-
-
 });
 
 //I'm Feeling Hungry click function
@@ -318,7 +315,7 @@ $('#hungryBtn').on('click', function(e) {
             queryParams: {
             credits: ''
             },
-            theme: 'multicolor large',
+            theme: '',
         };
         (function(t) {
             var n = this.window,
