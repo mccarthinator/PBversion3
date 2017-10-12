@@ -283,13 +283,14 @@ $('.btn-large').on('click', function() {
     $('#progress2').hide();
     $('#resultProgressMsg').show();
     $('#results-container').show();
-    //set static map
+    //set directions map
     var map = $('#googleMapContainer');
     var imgSrc = `https://www.google.com/maps/embed/v1/directions?key=${googleApiKey}&origin=${userLatitude},${userLongitude}&destination=${destLatitude},${destLongitude}&avoid=tolls|highways`;
     $('.map-title').show();
     $('#showMap').attr('src', imgSrc);
     map.show();
     showLyftButton(userLatitude, userLongitude, destLatitude, destLongitude);
+
 
 
 });
