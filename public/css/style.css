@@ -1,10 +1,15 @@
-body {
-    font-family: 'Poppins', sans-serif;
+  html {
+    font-family: 'Montserrat', sans-serif;
     background: snow;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-}
+  }
+
+/*body {
+     font-family: 'Poppins', sans-serif;
+
+}*/
 
 main {
     flex: 1 0 auto;
@@ -201,7 +206,7 @@ div.card-action.center.page1 {
 #budget-container div.col.s4.offset-s4.center-align {
     color: white;
     font-size: 20px;
-} 
+}
 
 #budget-container div.card.blue {
     margin: auto;
@@ -229,6 +234,9 @@ div.card-action.center.page1 {
     cursor: pointer;
 }
 
+materialize.min.css:6
+
+
 .fa {
     margin-right: 5px;
 }
@@ -239,6 +247,21 @@ div.card-action.center.page1 {
     font-size: 18px;
     opacity: 0.9;
 }
+
+
+/* this is for making the footer sticky */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  /* this is for making the footer sticky */   
+
+
 
 .footer {
     padding: 10px;
@@ -357,7 +380,7 @@ div.card-action.center.page1 {
     overflow: hidden;
     display: block;
     max-width: 300px;
-    display: inline-block; 
+    display: inline-block;
 }
 
 #progress2 {
@@ -370,7 +393,7 @@ div.card-action.center.page1 {
     text-align: center;
     display: inline-block;
     max-width: 300px;
-    display: none; 
+    display: none;
     width: 100%;
     margin: auto;
     margin-bottom: 10px;
@@ -395,7 +418,7 @@ div.card-action.center.page1 {
 }
 
 #foodType-container {
-    display: none;  
+    display: none;
     margin: auto;
 }
 

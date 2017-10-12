@@ -5,11 +5,11 @@
     <div class="row center input-field">
         <!--User form-->
         <input class="col s10 offset-s1 m4 offset-m4 text-area" id="locationInput" type="text" placeholder="Chicago, IL">
-        <a class="btn waves-effect waves-light green darken-1 z-depth-2" id="submitBtn">Find Food</a>
+        <a class="btn waves-effect waves-light green darken-1 z-depth-0" id="submitBtn">Find Food</a>
     </div>
     <div class="row center">
         <p class="errMsg" id="failMsg">Please enter a valid city</p>
-        <a class="btn waves-effect waves-light grey lighten-1 z-depth-2" id="hungryBtn">Feeling hungry?</a>
+        <a class="btn waves-effect waves-light grey lighten-1 z-depth-0" id="hungryBtn">Feeling hungry?</a>
         <p id="locationLoad" class="animated bounce">...Finding your location</p>
     </div>
 </div>
@@ -95,7 +95,7 @@
 </div>
 
 <!--End of second screen, cuisine type-->
-        
+
 <!--3rd screen: Budget preference container-->
 <br></br>
 <div class="container text-center" id="budget-container">
@@ -107,15 +107,15 @@
                 </div>
             </div>
         </div>
-    </div>   
+    </div>
 
     <div class="row center-align" id="moneySigns">
         <button class="btn btn-large green" data-id="cheap">$</button>
         <p class="errMsg" id="cheapErrMsg">Whoops! Can't seem to find any cheap restaurants.</p>
-        
+
         <button class="btn btn-large green" data-id="medium">$$</button>
         <p class="errMsg" id="medErrMsg">Oh no! We can't find any medium-priced restaurants based on your selection.</p>
-        
+
         <button class="btn btn-large green" data-id="expensive">$$$</button>
         <p class="errMsg" id="expErrMsg">Uh oh, we can't seem to find any restaurants that match your search.</p>
     </div>
@@ -136,7 +136,7 @@
 <div class="container" id="results-container">
     <div class="row">
         <div class="col s12 center-align">
-            <button class="btn waves-effect waves-light z-depth-2" id="backButton3" onclick="location.reload()">Try Again</button>
+            <button class="btn waves-effect waves-light z-depth-0" id="backButton3" onclick="location.reload()">Try Again</button>
             <h5 class="blue-text center-align" id="heres-your-result">Here's your result:</h5>
         </div>
     </div>
@@ -155,7 +155,7 @@
             </tr>
             </thead>
 
-            <tbody class="table-body center-align"> 
+            <tbody class="table-body center-align">
             <tr>
                 <td id=""><span class="green-text text-darken-1 data" id="recName"></span></td>
                 <td id=""><span class="green-text text-darken-1 data" id="recAddress"></span></td>
@@ -204,13 +204,10 @@
 
 
     {{!--Lyft button--}}
-    <div class="row button-container center-align" id="lyft-web-button-parent">
-        <div class="col s4">
-            <a id="lyftButton" class="waves-effect waves-light btn blue darken-1" >LYFT BUTTON</a>
-        </div>
-    </div>
+<div class="row button-container center-align" id="lyft-web-button-parent">
+</div>
 <script>
-   
 </script>
+        
 </div>
 
