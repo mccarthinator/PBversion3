@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE>
+<html ng-app lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    {{!--angular script tag--}}
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Piecebroker</title>
@@ -29,7 +32,7 @@
                   {{else}}
                     <li><a href="/signup">Sign Up</a></li>
                   {{/if}}
-                  
+
                 </ul>
           </div>
         </div>
@@ -47,7 +50,7 @@
 
     {{!--//footer--}}
 
-    <footer class="page-footer blue darken-1">
+    <footer ng-app="myApp" class="page-footer blue darken-1">
       <div class="container blue darken-1">
           <div class="row">
             <div class="col s8 blue darken-1 left-align">
@@ -57,10 +60,11 @@
             <div class="col s4 darken-1 right-align">
               <h5 class="white-text">Team GitHubs</h5>
                 <p><a class="orange-text text-lighten-3" id="link1" href="https://github.com/dbalkin77">Doug Balkin</a>
-                    - <a class="orange-text text-lighten-3" id="link2" href="https://github.com/jjconoscenti">JJ Conoscenti</a>
-                    - <a class="orange-text text-lighten-3" id="link3"href="https://github.com/colinmac17">Colin McAtee</a>
-                    - <a class="orange-text text-lighten-3" id="link4" href="https://github.com/mccarthinator">Katie McCarthy</a>
-                    - <a class="orange-text text-lighten-3" id="link5" href="https://github.com/wjthornberry">Jake Thornberry</a>
+                    - <a class="orange-text text-lighten-3" id="link2" href="https://github.com/jjconoscenti">JJ Conoscenti</a><br>
+                     <a class="orange-text text-lighten-3" id="link3"href="https://github.com/colinmac17">Colin McAtee</a>
+                    - <a class="orange-text text-lighten-3" id="link4" href="https://github.com/mccarthinator">Katie McCarthy</a><br>
+                     <a class="orange-text text-lighten-3" id="link5" href="https://github.com/wjthornberry">Jake Thornberry</a>
+                    - <a class="orange-text text-lighten-3" id="link5" href="https://github.com/lisamishra">Lisa Mishra</a>
                 </p>
             </div>
           </div>
