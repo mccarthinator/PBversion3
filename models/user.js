@@ -36,6 +36,9 @@ module.exports = function(sequelize, DataTypes) {
             validate: {
                 len: [1]
             }
+        },
+        image: {
+            type: DataTypes.STRING,
         }
     });
     User.associate = function(models) {
