@@ -768,6 +768,10 @@ th {
     font-size: 14px;
 }
 
+td{
+    cursor: pointer;
+}
+
 #username {
     padding:5px;
 }
@@ -824,6 +828,10 @@ th {
         padding: 5px;
         margin: 0 auto;
     }
+}
+
+.favorite{
+    color:red;
 }
 
 @media screen and (max-width:434px) {

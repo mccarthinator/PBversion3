@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "",
-    "database": "piecebroker_db",
+    "password": "Septembre1",
+    "database": "Bamazon",
     "host": "localhost",
     "dialect": "mysql"
   },
