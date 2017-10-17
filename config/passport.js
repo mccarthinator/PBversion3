@@ -38,6 +38,7 @@ module.exports = function(passport, user){
                         first_name: req.body.first_name,
                         last_name: req.body.last_name,
                         city: req.body.city,
+                        image: req.body.image,
                         phoneNumber: req.body.phoneNumber
                     };
                 User.create(data).then(function(newUser, created){
