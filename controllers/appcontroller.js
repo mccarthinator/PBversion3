@@ -64,11 +64,10 @@ router.get('/profile', isLoggedIn, function(req, res) {
     });
 });
 
-router.post('/favorite', function (req, res) {
-    
+// favorite
+router.post('/favorite', function (req, res) {  
     var id = req.body.id;
     console.log(id)
-
     db.result.update({
       saved: true,
     }, {
