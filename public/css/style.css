@@ -830,8 +830,12 @@ td{
     }
 }
 
-.favorite{
-    color:red;
+.favorite {
+    color:gold;
+}
+
+.unfavorite {
+    color: blue;
 }
 
 @media screen and (max-width:434px) {

@@ -45,34 +45,23 @@ router.post('/app', function(req, res){
     });
 });
 
-router.get('/profile', function(req, res) {
+router.get('/profile', isLoggedIn, function(req, res) {
     var hbsObj = {};
-
-
     db.user.findOne({
         where: {
-            id: 2
+            id: req.user.id
         }
     }).then(function(data) {
-
         hbsObj.user = data;
-
-
-        db.result.findAll({
-            where: {
-                userId: 2
-            }
-        }).then(function(resultData){
-            hbsObj.result = resultData;
-
-            //console.log("Result: ", hbsObj.result );
-            res.render('profile', hbsObj);
-        });
     });
-
-   
-
-
+    db.result.findAll({
+        where: {
+            userId: req.user.id
+        }
+    }).then(function(resultData){
+        hbsObj.result = resultData;
+        res.render('profile', hbsObj);
+    });
 });
 
 router.post('/favorite', function (req, res) {
