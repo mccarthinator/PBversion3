@@ -50,22 +50,19 @@
 </div>
 
 <script type="text/javascript">
-    // Click on star      
+    // Click on star     
     $('td').on('click', function () {
         // Assign attribute data-id to it
         var val = $(this).attr('data-id');
         // post to favorite route
         $.post('/favorite', {id: val}, function (response) {
-            // If the response is ok
-            if (response === 'Ok') {
+             if(response === 'Ok'){
                 // log the number of the favorited resto
-                console.log(`fav # ${val}`);
-                // and add the fav class
-                $('#fav' + val).addClass('favorite');
-        });
-    });
-
-    const changeState () =>
+                console.log('fav' + val);
+                 $('#fav' + val).addClass('favorite');
+             } 
+         });
+     });
 </script>
 
 
