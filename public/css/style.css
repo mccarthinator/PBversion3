@@ -1,4 +1,4 @@
-  html {
+html {
     font-family: 'Montserrat', sans-serif;
     background: snow;
     display: flex;
@@ -490,6 +490,13 @@ body {
     color: #fffff0;
 }
 
+.collection-item-img{
+    padding-left:30px;
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .email-btn {
     padding: 5px;
     background: gray;
@@ -503,6 +510,15 @@ body {
     background-color: #ffab40;
     margin-top: 20px;
     margin-bottom: 25px;
+}
+
+.image-sizer {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    margin: auto 0;
+    text-align: center;
 }
 
 .backButton {
@@ -768,6 +784,10 @@ th {
     font-size: 14px;
 }
 
+td{
+    cursor: pointer;
+}
+
 #username {
     padding:5px;
 }
@@ -824,6 +844,14 @@ th {
         padding: 5px;
         margin: 0 auto;
     }
+}
+
+.favorite {
+    color:gold;
+}
+
+.unfavorite {
+    color: blue;
 }
 
 @media screen and (max-width:434px) {

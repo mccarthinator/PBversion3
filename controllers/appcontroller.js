@@ -64,6 +64,25 @@ router.get('/profile', isLoggedIn, function(req, res) {
     });
 });
 
+// favorite
+router.post('/favorite', function (req, res) {  
+    var id = req.body.id;
+    console.log(id)
+    db.result.update({
+      saved: true,
+    }, {
+      where: {
+       id: id
+      }
+    })
+    .then(function (data) {
+        res.json("Ok");
+    })
+    .catch(function (err) {
+        res.json(err)
+    });
+});
+
 router.get('/logout', authController.logout);
 
 router.post('/signup', passport.authenticate('local-signup', {
