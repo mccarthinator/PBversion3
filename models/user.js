@@ -41,6 +41,7 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING,
         }
     });
+    
     User.associate = function(models) {
         User.hasMany(models.result, {
             //if a user is deleted, delete all of their results
