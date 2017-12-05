@@ -49,7 +49,7 @@ Screenshots:
 ## Developed By
 
 * Douglas Balkin: [@dbalkin77](https://github.com/dbalkin77) 
-* JJ Conoscenti: [@jjconoscenti](https://github.com/jjconoscenti) 
+* JJ Conoscenti: [@jjconoscenti](https://www.linkedin.com/in/jjconoscenti/) 
 * Colin McAtee: [@colinmac17](https://github.com/colinmac17) 
 * Katie McCarthy: [@mccarthinator](https://github.com/mccarthinator) 
 * Jake Thornberry: [@wjthornberry](https://github.com/wjthornberry) 
